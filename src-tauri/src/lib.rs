@@ -182,7 +182,7 @@ pub fn run() {
                 .enabled(false)
                 .build(app)?;
             let protect_all_toggle =
-                CheckMenuItemBuilder::with_id(TOGGLE_PROTECT_ALL_ID, "Protect All Apps")
+                CheckMenuItemBuilder::with_id(TOGGLE_PROTECT_ALL_ID, "Prevent Lid Sleep")
                     .checked(state.protect_all_apps)
                     .build(app)?;
             let open_settings =
@@ -219,7 +219,7 @@ pub fn run() {
             TrayIconBuilder::new()
                 .icon(tray_icon)
                 .icon_as_template(true)
-                .tooltip("Lovstudio Mac Toolkits")
+                .tooltip("Lovstudio.ai Mac Menu Manager")
                 .menu(&menu)
                 .show_menu_on_left_click(true)
                 .on_menu_event(move |app, event| match event.id().as_ref() {
@@ -458,9 +458,9 @@ fn show_settings_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
 
 fn protection_status_label(state: &AppProtectionState) -> String {
     if state.effective_lid_protection {
-        format!("Protected: {} apps", state.protected_count)
+        format!("Lid Sleep Guard: {} apps", state.protected_count)
     } else {
-        "Protection off".to_string()
+        "Lid Sleep Guard: Off".to_string()
     }
 }
 
@@ -532,7 +532,9 @@ fn classify_user_app(line: &str, own_pid: u32, uid: libc::uid_t) -> Option<Detec
 
     let command_line = rest[uid_split..].trim_start();
     let lower = command_line.to_lowercase();
-    if lower.contains("/lovstudio mac toolkits.app/") {
+    if lower.contains("/lovstudio mac toolkits.app/")
+        || lower.contains("/lovstudio.ai mac menu manager.app/")
+    {
         return None;
     }
 

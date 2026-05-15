@@ -34,7 +34,7 @@ jobs:
         id: notes
         shell: bash
         env:
-          APP_NAME: "Lovstudio Mac Toolkits"
+          APP_NAME: "Lovstudio.ai Mac Menu Manager"
           RELEASE_TAG: ${{ steps.vars.outputs.tag }}
           HAS_APPLE_SIGNING: ${{ secrets.APPLE_CERTIFICATE != '' && secrets.APPLE_CERTIFICATE_PASSWORD != '' && secrets.APPLE_SIGNING_IDENTITY != '' && secrets.APPLE_ID != '' && secrets.APPLE_PASSWORD != '' && secrets.APPLE_TEAM_ID != '' }}
         run: |
@@ -69,7 +69,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.vars.outputs.tag }}
-          name: Lovstudio Mac Toolkits ${{ steps.vars.outputs.tag }}
+          name: Lovstudio.ai Mac Menu Manager ${{ steps.vars.outputs.tag }}
           draft: true
           prerelease: false
           body: ${{ steps.notes.outputs.notes }}

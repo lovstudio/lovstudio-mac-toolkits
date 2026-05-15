@@ -1,6 +1,6 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Lovstudio Mac Toolkits",
+  "productName": "Lovstudio.ai Mac Menu Manager",
   "version": "0.1.1",
   "identifier": "com.lovstudio.mactoolkits",
   "build": {
@@ -13,9 +13,9 @@
     "windows": [
       {
         "label": "main",
-        "title": "Lovstudio Mac Toolkits",
-        "width": 460,
-        "height": 520,
+        "title": "Lovstudio.ai Mac Menu Manager",
+        "width": 500,
+        "height": 620,
         "minWidth": 360,
         "minHeight": 420,
         "resizable": false,

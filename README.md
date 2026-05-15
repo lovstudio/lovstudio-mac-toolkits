@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="docs/images/cover.png" alt="Lovstudio Mac Toolkits Cover" width="100%">
+  <img src="docs/images/cover.png" alt="Lovstudio.ai Mac Menu Manager Cover" width="100%">
 </p>
 
 <h1 align="center">
   <img src="assets/logo.svg" width="32" height="32" alt="Logo" align="top">
-  Lovstudio Mac Toolkits
+  Lovstudio.ai Mac Menu Manager
 </h1>
 
 <p align="center">
-  <strong>A macOS menu bar toolkit that keeps important local work alive.</strong><br>
-  <sub>macOS · Tauri · React · TypeScript · Rust</sub>
+  <strong>A pluggable macOS menu bar manager from Lovstudio.ai, 手工川工作室.</strong><br>
+  <sub>macOS / Tauri / React / TypeScript / Rust</sub>
 </p>
 
 <p align="center">
@@ -21,10 +21,10 @@
 
 ## Features
 
-- Protect all running apps from lid-close sleep when long jobs need to continue.
-- Mark specific privileged apps so they remain protected even when global protection is off.
-- Detect and group running apps, CLI tools, and background processes.
-- Fold helper processes like Codex Computer Use into the parent app where possible.
+- Provide a modular foundation for Lovstudio.ai macOS menu bar utilities.
+- Ship the first module, Lid Sleep Guard, for preventing lid-close sleep during long-running work.
+- Support global protection and per-app privileged protection.
+- Detect and group running apps, CLI tools, helpers, and background processes.
 - Use a privileged helper for `pmset` changes, avoiding repeated admin prompts after setup.
 - Ship signed macOS releases with Tauri updater artifacts.
 
@@ -38,14 +38,15 @@ The app is Developer ID signed and notarized. The first time protection changes 
 
 ## Usage
 
-Open Lovstudio Mac Toolkits from the macOS menu bar.
+Open Lovstudio.ai Mac Menu Manager from the macOS menu bar.
 
-- **Protect All Apps** protects every detected running app while enabled.
-- **Privileged Apps** lets you keep selected apps protected independently of the global switch.
+- **Lid Sleep Guard** is the first installed module.
+- **Global Mode** protects every detected running app while enabled.
+- **Privileged Apps** keeps selected apps protected independently of the global switch.
 - **Background processes** are available in a secondary expandable section to keep the main list focused.
 - **Refresh** rescans the current process list.
 
-This tool is designed for long-running local work such as AI agents, coding sessions, rendering, builds, and other tasks that should not be paused by system sleep.
+The first module is designed for long-running local work such as AI agents, coding sessions, rendering, builds, and other tasks that should not be paused by system sleep.
 
 ## Development
 

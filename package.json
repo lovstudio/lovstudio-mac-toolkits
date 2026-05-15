@@ -1,5 +1,6 @@
 {
   "name": "lovstudio-mac-toolkits",
+  "description": "Lovstudio.ai macOS menu bar manager with pluggable modules.",
   "private": true,
   "version": "0.1.1",
   "type": "module",
