@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Lovstudio Mac Toolkits runtime guard logo">
+  <path
+    d="M512 112 782 224v216c0 184-110 320-270 424-160-104-270-240-270-424V224l270-112Z"
+    fill="none"
+    stroke="#D97757"
+    stroke-width="76"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M386 410 486 512 386 614M544 612h112"
+    fill="none"
+    stroke="#D97757"
+    stroke-width="72"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

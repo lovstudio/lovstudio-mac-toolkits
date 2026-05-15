@@ -1,0 +1,53 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Lovstudio Mac Toolkits",
+  "version": "0.1.0",
+  "identifier": "com.lovstudio.mactoolkits",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5141",
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Lovstudio Mac Toolkits",
+        "width": 460,
+        "height": 520,
+        "minWidth": 360,
+        "minHeight": 420,
+        "resizable": false,
+        "fullscreen": false,
+        "visible": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/64x64.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/lovstudio/lovstudio-mac-toolkits/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlGNUQ1NTk4RjQzMkI1NApSV1JVSzBPUFdkWDFDVVRNVW5mbjRMUkU1cUpNczVYOUc4SEV4TnlzTDVYSGtEeFppSloyY0FRMAo="
+    }
+  }
+}
