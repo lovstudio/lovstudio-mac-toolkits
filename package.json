@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.1",
   "type": "module",
+  "license": "Apache-2.0",
   "packageManager": "pnpm@10.33.3",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5141 --strictPort",

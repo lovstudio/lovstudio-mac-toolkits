@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 800" role="img" aria-label="Abstract cover for Lovstudio Mac Toolkits">
+  <rect width="1800" height="800" fill="#F9F9F7"/>
+  <path d="M0 584C194 512 342 544 548 486C770 424 900 272 1130 318C1324 356 1452 512 1800 416V800H0Z" fill="#EFE9DF"/>
+  <path d="M110 640C374 538 606 544 832 464C1064 382 1218 260 1696 284" fill="none" stroke="#181818" stroke-width="2" opacity=".12"/>
+  <path d="M156 242h388M156 322h512M156 402h360M156 482h612" fill="none" stroke="#181818" stroke-width="22" stroke-linecap="round" opacity=".13"/>
+  <rect x="106" y="176" width="706" height="378" rx="30" fill="none" stroke="#181818" stroke-width="2" opacity=".10"/>
+  <circle cx="790" cy="476" r="18" fill="#CC785C" opacity=".55"/>
+  <circle cx="890" cy="416" r="13" fill="#CC785C" opacity=".44"/>
+  <circle cx="1018" cy="372" r="9" fill="#CC785C" opacity=".34"/>
+  <path d="M808 466 890 416 1018 372" fill="none" stroke="#CC785C" stroke-width="8" stroke-linecap="round" opacity=".30"/>
+  <path d="M1124 150 1518 292 1436 646 1042 504Z" fill="none" stroke="#CC785C" stroke-width="34" stroke-linejoin="round" opacity=".86"/>
+  <path d="M1258 222 1608 350 1540 596 1190 468Z" fill="none" stroke="#CC785C" stroke-width="20" stroke-linejoin="round" opacity=".42"/>
+  <path d="M1190 468 1436 646M1518 292 1608 350" fill="none" stroke="#181818" stroke-width="18" stroke-linecap="round" opacity=".18"/>
+  <path d="M1504 172h86M1504 222h128M1504 272h72" fill="none" stroke="#181818" stroke-width="16" stroke-linecap="round" opacity=".10"/>
+</svg>
