@@ -2237,7 +2237,7 @@ dependencies = [
 
 [[package]]
 name = "lovstudio_mac_toolkits"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "image",
  "libc",

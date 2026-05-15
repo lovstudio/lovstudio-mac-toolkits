@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 2026-05-15
+
+- Enable Tauri updater artifact generation so releases include `latest.json` and signed update archives.
+
 ## 0.1.0 - 2026-05-15
 
 - Initial release of Lovstudio Mac Toolkits.
